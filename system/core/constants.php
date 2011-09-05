@@ -1,0 +1,22 @@
+<?php
+define('RUTA_DB'			, RUTA_SISTEMA . '/database/');
+define('RUTA_LIBRERIAS_CORE', RUTA_SISTEMA . '/libraries/');
+define('RUTA_HELPERS_CORE'	, RUTA_SISTEMA . '/helpers/');
+define('RUTA_LOGS'			, PATH . '/logs/');
+define('RUTA_APP'			, PATH . '/' . $application_folder);
+define('RUTA_APP_CORE'		, RUTA_APP . '/core/');
+define('RUTA_CONFIG'		, RUTA_APP . '/config/');
+define('RUTA_LIBRERIAS'		, RUTA_APP . '/libraries/');
+define('RUTA_LENGUAJE'		, RUTA_APP . '/lang_files/');
+define('RUTA_HELPERS'		, RUTA_APP . '/helpers/');
+define('RUTA_MODULOS'		, RUTA_APP . '/modules/');
+define('RUTA_CONTROLLERS'	, RUTA_APP . '/controllers/');
+define('RUTA_VIEWS'			, RUTA_APP . '/views/');
+define('RUTA_MODELS'		, RUTA_APP . '/models/');
+define('RUTA_MIGRATIONS'	, RUTA_APP . '/migrations/');
+define('RUTA_PACKAGES'		, RUTA_SISTEMA . '/packages/');
+define('RUTA_THEMES'		, PATH . '/themes/');
+define('RUTA_JS'			, PATH . '/assets/js/');
+define('RUTA_CSS'			, PATH . '/assets/css/');
+define('JS'					, '.js');
+define('CSS'				, '.css');

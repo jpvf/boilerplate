@@ -1,0 +1,52 @@
+------
+users: 
+ columns:
+  id: int NOT NULL
+  username: string NOT NULL
+  first_name: string
+  last_name: string
+  password: string
+  email: string
+  active: bool NOT NULL default=1
+  id_profile: int NOT NULL
+  uid: int(10) NOT NULL
+ keys:
+  active: key
+  uid: unique
+ relations:
+  users_profiles: id_profile
+ crud: true
+
+users_profiles:
+ columns:
+  id: int NOT NULL
+  name: string
+  active: bool NOT NULL default=1
+ keys:
+  active: key
+ crud: false
+
+users_permissions:
+ columns:
+  id: int NOT NULL
+  id_user: int NOT NULL
+  id_resource: int NOT NULL
+  allowed: bool NOT NULL
+ keys:
+  id_user: key
+  id_resource: key
+ relations:
+  users: id_user
+  users_resources: id_resource
+ crud: false
+
+users_resources:
+ columns:
+  id: int NOT NULL
+  name: string
+  active: bool NOT NULL
+ keys:
+  active: key
+ relations:
+  users_permissions: id_resource
+ crud: false

@@ -1,0 +1,18 @@
+------
+settings:
+ columns:
+  id: int NOT NULL 
+  setting: string NOT NULL
+  title: string NOT NULL
+  type: string NOT NULL
+  default: text NOT NULL
+  value: text NOT NULL
+  options: text NOT NULL
+  is_required: bool NOT NULL default=0
+  module: int(5) NOT NULL default=0
+  order: int(5) NOT NULL default=0
+ keys:
+  title: key
+ relations: 
+  settings_categories: id_module
+ crud: true
