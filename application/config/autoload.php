@@ -8,15 +8,17 @@
  * Solo debe existir un array por cada item.
  */
 $autoload['libraries'] = array(
-	'datamapper',
-	'acl', 
 	'modules', 
 	'breadcrumbs', 
 	'template', 
 	'assets', 
 	'perms', 
 	'form',
-	'app_model'
+    'app_controller',
+	'admin_controller',
+	'app_model',
+    'auth',
+	'acl'
 );
 
 $autoload['helpers']   = array(
@@ -31,11 +33,11 @@ $autoload['helpers']   = array(
 	'users', 
 	'tabs', 
 	'input', 
-	'menu',
+	'users',
 	'security', 
 	'language',
 	'messages',
-	'inflector_helper'
+	'validation'
 );
 
 $autoload['language']  = array();
