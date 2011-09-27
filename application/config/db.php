@@ -6,19 +6,19 @@
 /*
  * Nombre del host
  */
-$db['hostname'] = "localhost";
+$db['hostname'] = "localhost:/tmp/mysql/lala.sock";
 
 /*
  * Nombre de usuario
  */
-$db['username'] = "root";
+$db['username'] = "lorine";
 
 /*
  * Password de usuario
  */
-$db['password'] = "";
+$db['password'] = "j2dXWE7R";
 
 /*
  * Base de datos a usar
  */
-$db['database'] = "boilerplate";
+$db['database'] = "lala";
