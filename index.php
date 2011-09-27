@@ -14,7 +14,7 @@ define('BASE'        , 1);
 define('PATH'        , __DIR__);
 define('RUTA_SISTEMA', PATH . '/system');
 define('RUTA_CORE'   , RUTA_SISTEMA . '/core/');
-define('EXT'         , '.php');
+define('EXT'         , '.phtml');
 
 /**
 * Incluye las librerias del core del framework.
@@ -37,7 +37,7 @@ include(RUTA_CORE    . 'model'          . EXT);
 include(RUTA_CORE    . 'uri'            . EXT);
 include(RUTA_CORE    . 'input'          . EXT);
 include(RUTA_CORE    . 'security'       . EXT);
-
+include(RUTA_LIBRERIAS_CORE . 'session' . EXT);
 
 /**
 * Se instancian objetos, el objeto Loader va a autocargar las librerias y helpers definidos en el archivo de 
