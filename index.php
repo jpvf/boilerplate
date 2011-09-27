@@ -14,7 +14,7 @@ define('BASE'        , 1);
 define('PATH'        , __DIR__);
 define('RUTA_SISTEMA', PATH . '/system');
 define('RUTA_CORE'   , RUTA_SISTEMA . '/core/');
-define('EXT'         , '.phtml');
+define('EXT'         , '.php');
 
 /**
 * Incluye las librerias del core del framework.
