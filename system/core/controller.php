@@ -33,6 +33,8 @@ class Controller{
       $this->forge    = Forge::getInstance();
       $this->session  = Session::getInstance();
       $this->language = Language::getInstance();
+      $this->uri      = Uri::getInstance();
+      $this->input    = Input::getInstance();
 
       foreach ($this->load->objects as $key => $val)
       {
